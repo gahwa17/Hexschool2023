@@ -10,23 +10,45 @@
 </head>
 <body>
     <div class="container">
-        <div class="header row">
-            <div class="logo">
-                <h1><a href="./home.html"></a></h1>
-            </div>
-            <ul class="nav">
-                <li><a href="#">首頁</a></li>
-                <li><a href="#">定價</a></li>
-            </ul>
+        <div class="header border-bottom border-light py-3 mb-3">           
+            <!-- 正常視窗下，原來的導覽列 -->
+            <nav class="navbar navbar-expand-md">
+                <div class="logo">
+                    <!-- 若a連結內不加文字，整張圖會消失Q -->
+                    <h1><a href="./home.html">AI工具王</a></h1>
+                </div>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Navbarshow" >
+                    <!-- 漢堡原來是黑的，要加上text-white -->
+                    <span class="text-white material-icons">menu</span>
+                </button>
+                <!-- 把原先的ul固定到最左邊，搭配d-flex跟justify-content-end
+                    但是d-flex的存在會強制手機板的漢堡強制打開，縮不回來
+                    所以改成d-md-flex，只在網頁版時才這樣固定在左側
+                -->
+                <div id="Navbarshow" class="collapse navbar-collapse d-md-flex justify-content-end">
+                    <ul class="nav text-center">
+                        <li class="nav-item">
+                            <!-- 
+                                1. 要加nav-link才會滿版
+                                2. a預設是link-primary(且該網站目前primary是橘色，改成secondary)
+                            -->
+                            <a class="nav-link link-secondary py-3" href="#">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-secondary py-3" href="#">定價</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
         <div class="banner">
-            <p>
+            <!-- <p>
                 透過<br>
                 AI 工具王的<br>
                 強大模型<br>
                 讓您的業務<br>
                 更聰明<br>
-            </p>
+            </p> -->
             <a href=""></a>
             <div class="banner-animation"><span></span><span></span><span></span></div>
         </div>
@@ -96,7 +118,7 @@
             </ul>
         </div>
     </div>
-
+    
     <!-- <div class="bg-white">
         <div class="container">
             <div class="tool">
@@ -229,7 +251,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="container">
         <div class="callToAction">
@@ -245,15 +267,23 @@
                 <h1><a href=""></a></h1>
             </div>
         </div>
-        <div class="footer">
-            <p class="copyright"></p>
-            <ul class="social">
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+        <div class="footer d-flex justify-content-between fw-bold border-top pt-5 pb-3">
+            <p>AI工具王 ©2023</p>
+
+            <!-- 用order-3換去最左邊 -->
+            <a class="order-3" href="#">
+                Back to Top
+                <!-- <span class="ms-2 material-icons">arrow_upward</span> -->
+                <!-- 箭頭變小fs-6，把span改sub讓他在副標題的位置 -->
+                <sub class="fs-6 ms-2 material-icons">arrow_upward</sub>
+            </a>
+            <ul class="social d-flex gap-3">
+                <li><a class="link-secondary" href="#">Facebook</a></li>
+                <li><a class="link-secondary" href="#">Twitter</a></li>
+                <li><a class="link-secondary" href="#">Instagram</a></li>
             </ul>
-            <button class="goTop"></button>
         </div>
-    </div> -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
 </html>

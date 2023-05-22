@@ -1,12 +1,35 @@
 .logo a {
-    display: block; 
+    display: inline-block; 
     background-image: url('../img/logo.png');
     text-decoration: none;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 24px;
+    height: 40px;
+    width: 188px;
+    // width: auto; 
 
+    /*  將文字推出 <h1>  */
 	text-indent: 101%;
 	overflow: hidden;
 	white-space: nowrap;
+}
+
+// 將社群連結往左推
+.social {
+    padding-right: 50%;
+}
+// header, max以下打開
+@media(max-width: 768px){
+    .header ul{
+        flex-direction: column;
+    }
+    .social {
+        margin-top: 36px;
+        order: 3;
+    }
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }            
 }
