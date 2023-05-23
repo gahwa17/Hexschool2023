@@ -1,17 +1,11 @@
-.logo a {
-    display: inline-block; 
-    background-image: url('../img/logo.png');
+.logo img{
+    display: block; 
     text-decoration: none;
     background-size: contain;
     background-repeat: no-repeat;
     height: 40px;
-    width: 188px;
-    // width: auto; 
-
-    /*  將文字推出 <h1>  */
-	text-indent: 101%;
-	overflow: hidden;
-	white-space: nowrap;
+    // width: 188px;
+    width: auto; 
 }
 
 .display-1 {
