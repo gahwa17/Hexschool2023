@@ -14,10 +14,12 @@
 	white-space: nowrap;
 }
 
-// 將社群連結往左推
-.social {
-    padding-right: 50%;
+.navbar-toggler-icon[aria-expanded="true"]::befor {
+    font-family: "Material Icons";
+    content: "\f00d"; /* Close icon */
 }
+
+
 // header, max以下打開
 @media(max-width: 768px){
     .header ul{
@@ -25,7 +27,6 @@
     }
     .social {
         margin-top: 36px;
-        order: 3;
     }
     .footer {
         display: flex;

@@ -19,7 +19,7 @@
                 </div>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Navbarshow" >
                     <!-- 漢堡原來是黑的，要加上text-white -->
-                    <span class="text-white material-icons">menu</span>
+                    <span class="navbar-toggler-icon material-icons text-white">menu</span>
                 </button>
                 <!-- 把原先的ul固定到最左邊，搭配d-flex跟justify-content-end
                     但是d-flex的存在會強制手機板的漢堡強制打開，縮不回來
@@ -268,20 +268,22 @@
             </div>
         </div>
         <div class="footer d-flex justify-content-between fw-bold border-top pt-5 pb-3">
-            <p>AI工具王 ©2023</p>
-
-            <!-- 用order-3換去最左邊 -->
-            <a class="order-3" href="#">
+            <div class="d-flex justify-content-between flex-column flex-md-row">
+                <p>AI工具王 ©2023</p>
+                <ul class="social d-flex gap-3 ms-md-5">
+                    <li><a class="link-secondary" href="#">Facebook</a></li>
+                    <li><a class="link-secondary" href="#">Twitter</a></li>
+                    <li><a class="link-secondary" href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <!-- align-self-start 避免social的mt把a連結高度一起拉高 -->
+            <a class="align-self-start" href="#">
                 Back to Top
-                <!-- <span class="ms-2 material-icons">arrow_upward</span> -->
+                <!-- <span class="ms-2 align-middle material-icons">arrow_upward</span> -->
                 <!-- 箭頭變小fs-6，把span改sub讓他在副標題的位置 -->
                 <sub class="fs-6 ms-2 material-icons">arrow_upward</sub>
             </a>
-            <ul class="social d-flex gap-3">
-                <li><a class="link-secondary" href="#">Facebook</a></li>
-                <li><a class="link-secondary" href="#">Twitter</a></li>
-                <li><a class="link-secondary" href="#">Instagram</a></li>
-            </ul>
+
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>

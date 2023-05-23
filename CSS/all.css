@@ -9869,8 +9869,9 @@ img {
   white-space: nowrap;
 }
 
-.social {
-  padding-right: 50%;
+.navbar-toggler-icon[aria-expanded=true]::befor {
+  font-family: "Material Icons";
+  content: "\f00d"; /* Close icon */
 }
 
 @media (max-width: 768px) {
@@ -9879,7 +9880,6 @@ img {
   }
   .social {
     margin-top: 36px;
-    order: 3;
   }
   .footer {
     display: flex;
