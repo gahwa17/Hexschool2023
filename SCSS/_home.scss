@@ -22,10 +22,15 @@
 @media(max-width: 768px){
     .header ul{
         flex-direction: column;
+        justify-content: center;
+
+        // padding: 192px 107px;
+        // overflow: hidden;
+        height: 584px;
+        width: auto;
+
         top: 80px;
         border-top: 1px solid $gray-300;
-        padding: 192px 107px;
-        overflow: hidden;
         a {
             font-size: 80px;
         }

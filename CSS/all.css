@@ -9875,10 +9875,11 @@ img {
 @media (max-width: 768px) {
   .header ul {
     flex-direction: column;
+    justify-content: center;
+    height: 584px;
+    width: auto;
     top: 80px;
     border-top: 1px solid #dee2e6;
-    padding: 192px 107px;
-    overflow: hidden;
   }
   .header ul a {
     font-size: 80px;
