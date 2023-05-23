@@ -142,7 +142,7 @@
 .navbar-toggler-icon {
   display: inline-block;
   width: 1.5em;
-  height: 1.5em;
+  // height: 1.5em; 避免icon底下出現多餘高度
   vertical-align: middle;
   background-repeat: no-repeat;
   background-position: center;
