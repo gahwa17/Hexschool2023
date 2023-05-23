@@ -14,10 +14,21 @@
 	white-space: nowrap;
 }
 
-// header, max以下打開
+.display-1 {
+    display: block;
+}
+
+// header, 以下打開
 @media(max-width: 768px){
     .header ul{
         flex-direction: column;
+        top: 80px;
+        border-top: 1px solid $gray-300;
+        padding: 192px 107px;
+        overflow: hidden;
+        a {
+            font-size: 80px;
+        }
     }
     .social {
         margin-top: 36px;

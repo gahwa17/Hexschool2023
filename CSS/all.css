@@ -9868,9 +9868,20 @@ img {
   white-space: nowrap;
 }
 
+.display-1 {
+  display: block;
+}
+
 @media (max-width: 768px) {
   .header ul {
     flex-direction: column;
+    top: 80px;
+    border-top: 1px solid #dee2e6;
+    padding: 192px 107px;
+    overflow: hidden;
+  }
+  .header ul a {
+    font-size: 80px;
   }
   .social {
     margin-top: 36px;
