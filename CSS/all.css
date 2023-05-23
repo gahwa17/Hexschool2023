@@ -9868,11 +9868,6 @@ img {
   white-space: nowrap;
 }
 
-.navbar-toggler-icon[aria-expanded=true]::befor {
-  font-family: "Material Icons";
-  content: "\f00d"; /* Close icon */
-}
-
 @media (max-width: 768px) {
   .header ul {
     flex-direction: column;

@@ -14,12 +14,6 @@
 	white-space: nowrap;
 }
 
-.navbar-toggler-icon[aria-expanded="true"]::befor {
-    font-family: "Material Icons";
-    content: "\f00d"; /* Close icon */
-}
-
-
 // header, max以下打開
 @media(max-width: 768px){
     .header ul{
