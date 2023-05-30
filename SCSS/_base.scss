@@ -11,11 +11,12 @@ body {
 }
 
 .container {
-    // max-width: 1296px;
+    max-width: 1296px;
     margin: 0 auto;
 }
 
 img {
     max-width: 100%;
     height: auto;
+    vertical-align: middle; // 避免img下方不明間隙
 }

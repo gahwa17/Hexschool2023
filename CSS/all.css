@@ -9845,12 +9845,14 @@ body {
 }
 
 .container {
+  max-width: 1296px;
   margin: 0 auto;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
 }
 
 /* Header */
@@ -9863,8 +9865,57 @@ img {
   width: auto;
 }
 
+/* Banner */
 .banner {
   white-space: pre-line;
+}
+
+/* Enterprise */
+.enterprise-list {
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+  position: relative;
+}
+
+/* 隱藏 x 軸 */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.enterprise-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.enterprise-list {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* 偽元素創造左右兩邊的陰影 */
+.enterprise-list::after,
+.enterprise-list::before {
+  content: "";
+  position: absolute;
+  width: 196px;
+  height: 40px;
+  top: 0;
+}
+
+.enterprise-list::before {
+  left: 0;
+  padding-right: 196px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgb(0, 0, 0));
+}
+
+.enterprise-list::after {
+  right: 0;
+  padding-left: 196px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgb(0, 0, 0));
+}
+
+.enterprise-list img {
+  width: 160px;
+  height: 40px;
+  max-width: initial;
 }
 
 .display-1 {
