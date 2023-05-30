@@ -9836,7 +9836,7 @@ a:link, a:visited {
 *::before,
 ::after {
   box-sizing: border-box;
-  outline: 1px solid #F18724;
+  outline: 1px solid #343a40;
 }
 
 body {
@@ -9886,5 +9886,10 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+@media (max-width: 376px) {
+  .social {
+    margin-bottom: 36px;
   }
 }/*# sourceMappingURL=all.css.map */
