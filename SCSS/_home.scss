@@ -1,11 +1,15 @@
+/* Header */
 .logo img{
     display: block; 
     text-decoration: none;
     background-size: contain;
     background-repeat: no-repeat;
     height: 40px;
-    // width: 188px;
     width: auto; 
+}
+
+.banner {
+    white-space: pre-line; // 保留換行，所以不用br即可換行
 }
 
 .display-1 {
