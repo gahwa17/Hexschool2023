@@ -10016,6 +10016,11 @@ img {
   max-width: initial;
 }
 
+/* Tool */
+.tool-item {
+  width: 416px;
+}
+
 .display-1 {
   display: block;
 }
