@@ -66,6 +66,13 @@
   color: #1a1e21;
 }
 
+.link-black {
+  color: #000;
+}
+.link-black:hover, .link-black:focus {
+  color: black;
+}
+
 .ratio {
   position: relative;
   width: 100%;
@@ -443,6 +450,10 @@
 
 .border-dark {
   border-color: #212529 !important;
+}
+
+.border-black {
+  border-color: #000 !important;
 }
 
 .border-white {
@@ -1274,6 +1285,10 @@
   color: #212529 !important;
 }
 
+.text-black {
+  color: #000 !important;
+}
+
 .text-white {
   color: #fff !important;
 }
@@ -1328,6 +1343,10 @@
 
 .bg-dark {
   background-color: #212529 !important;
+}
+
+.bg-black {
+  background-color: #000 !important;
 }
 
 .bg-body {
