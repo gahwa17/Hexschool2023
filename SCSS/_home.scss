@@ -62,11 +62,24 @@
     width: 416px;
 }
 
+
+/* Custimized Utility */ 
 .display-1 {
     display: block;
 }
 
-// header, 以下打開
+.border-radius-160 {
+    border-radius: 160px;
+}
+
+
+
+// 以下打開
+@media(max-width: 992px){
+    .bg-white {
+        border-radius: 20px;
+    }          
+}
 @media(max-width: 768px){
     .header ul{
         flex-direction: column;
@@ -82,7 +95,7 @@
         a {
             font-size: 80px;
         }
-    }
+    }   
     .social {
         margin-top: 36px;
     }
@@ -96,5 +109,6 @@
 @media(max-width: 376px){
     .social {
         margin-bottom: 36px;
-    }      
+    }
+
 }
