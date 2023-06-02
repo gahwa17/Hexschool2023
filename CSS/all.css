@@ -11097,6 +11097,48 @@ img {
 .tool-item {
   width: 416px;
 }
+.tool-item .img-container {
+  overflow: hidden;
+}
+.tool-item .img-container .zoom {
+  transition: transform 0.3s;
+}
+.tool-item:hover .zoom {
+  transform: scale(1.2);
+}
+
+.content-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.content-container h3, .content-container .h3 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+.content-container a {
+  color: initial;
+}
+.content-container .caption {
+  font-size: 14px;
+  color: #525252;
+}
+.content-container .ai-desc {
+  padding: 20px 32px;
+  flex-grow: 1;
+}
+.content-container .ai-info {
+  border-top: 1px solid #525252;
+  border-bottom: 1px solid #525252;
+}
+.content-container .ai-info,
+.content-container .ai-hashtag {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 32px;
+  align-items: center;
+}
 
 /* Custimized Utility */
 .display-1 {
