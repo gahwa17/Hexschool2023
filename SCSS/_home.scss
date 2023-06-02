@@ -58,6 +58,7 @@
 }
 
 /* Tool */
+// Tool-list
 .tool-item {
     width: 416px;
 
@@ -107,6 +108,19 @@
       align-items: center;
     }
 }
+// pagination
+.page-link {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+
+
+
+
 
 /* Custimized Utility */ 
 .display-1 {

@@ -4515,7 +4515,6 @@ textarea.form-control-lg {
   display: block;
   color: #020202;
   background-color: #fff;
-  border: 1px solid #dee2e6;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -11129,6 +11128,15 @@ img {
   justify-content: space-between;
   padding: 20px 32px;
   align-items: center;
+}
+
+.page-link {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
 }
 
 /* Custimized Utility */
