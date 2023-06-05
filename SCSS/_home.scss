@@ -56,6 +56,17 @@
     height: 40px;
     max-width: initial; // set a CSS property to its default value
 }
+/* Recommend */
+.recommend .card{
+    background:  #ffffff14;
+    padding: 40px;
+    width: 416px;
+    height: 400px;
+}
+.comment {
+    margin: 20px 0px;
+    height: 215px;
+}
 
 /* Tool */
 // Tool-list
@@ -130,7 +141,6 @@
 .border-radius-160 {
     border-radius: 160px;
 }
-
 
 
 // 以下打開
