@@ -1,9 +1,19 @@
 /* Swiper */
 const swiper = new Swiper('.swiper', {
   // Default parameter
-  slidesPerView: 3,  // 顯示3個slide元素
+  slidesPerView: 1,  // 顯示3個slide元素
   spaceBetween: 24,  // 間距24px
-  slidesPerGroup: 3, // 3個一組切換
+  breakpoints: {
+    992:{
+      slidesPerView: 3
+    },
+    768: {
+      slidesPerView: 2
+    },
+    375: {
+      slidesPerView: 1
+    }
+  },
   // 分頁   
   pagination: {
      el: '.swiper-pagination',
