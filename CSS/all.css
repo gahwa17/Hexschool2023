@@ -11189,6 +11189,9 @@ img {
   }
 }
 @media (max-width: 768px) {
+  .container {
+    padding: 30px;
+  }
   .header ul {
     flex-direction: column;
     justify-content: center;
