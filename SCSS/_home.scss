@@ -60,13 +60,35 @@
 .recommend .card{
     background:  #ffffff14;
     padding: 40px;
-    width: 416px;
-    height: 400px;
+    height: auto; // card 等高
 }
 .comment {
     margin: 20px 0px;
-    height: 215px;
+    flex-grow: 1;
 }
+/* Swiper */
+.swiper {
+    padding-bottom: 36px;
+}
+
+.swiper-pagination.swiper-pagination-bullets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;   // 分頁表區塊元素切齊在Swiper容器底部
+}
+
+.swiper-pagination-bullet {
+    background-color: $black-80;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+    background-color: $white;
+}
+  
 
 /* Tool */
 // Tool-list
@@ -131,8 +153,6 @@
 
 
 
-
-
 /* Custimized Utility */ 
 .display-1 {
     display: block;
@@ -164,7 +184,7 @@
         a {
             font-size: 80px;
         }
-    }   
+    }
     .social {
         margin-top: 36px;
     }
@@ -176,8 +196,10 @@
 }
 
 @media(max-width: 376px){
+    .recommend .card{
+        padding: 20px;
+    }
     .social {
         margin-bottom: 36px;
     }
-
 }
