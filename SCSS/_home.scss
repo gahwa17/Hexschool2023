@@ -7,10 +7,20 @@
     height: 40px;
     width: auto; 
 }
-/* Banner */
-.banner {
-    white-space: pre-line; // 保留換行，所以不用br即可換行
+/* Service */
+.service-list .card{
+    background: $body-bg;
+    padding: 80px 40px;
+    gap: 20px;
 }
+.service-item {
+    width: 416px;
+    border: 1px solid $black-80;
+    span {
+        font-size: 80px;
+    }
+}
+
 /* Enterprise */
 .enterprise-list {
     display: flex;
@@ -162,7 +172,9 @@
     border-radius: 160px;
 }
 
-
+.whitespace-pre-line{
+    white-space: pre-line; // 保留換行，所以不用br即可換行
+}
 // 以下打開
 @media(max-width: 992px){
     .bg-white {
