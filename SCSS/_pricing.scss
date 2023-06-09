@@ -31,7 +31,25 @@
     left: 16px;
 }
 
-// 以下打開
+/* FQA */
+.question-item {
+    padding: 20px 40px;
+    border-radius: 16px;
+    /*  避免active才出現border導致空間擠壓的小型位移現象  */
+    border: solid 1px #ffffff;
+    transition: 0.1s ease;
+}
+
+.question-item.active {
+    border: solid 1px #ffffff;
+}
+
+.question-item:hover {
+    border-color: #ffffff;
+}
+
+
+
 @media(max-width: 992px){
    
 }

@@ -44,3 +44,13 @@ navbarTogglerIcon.classList.toggle("active");
 var currentIcon = navbarTogglerIcon.innerHTML;
 navbarTogglerIcon.innerHTML = (currentIcon === "menu") ? "close" : "menu";
 });
+
+$('.question-answer').hide();
+$('.remove-icon').hide();
+$(".question-item").click(function (e) {
+  $(this).toggleClass('active');
+  $(this).find('.add-icon').toggleClass('d-none');
+  $(this).find('.remove-icon').toggleClass('d-block');
+  $(this).find('.collapse-content p').toggleClass('d-block');
+  $(this).find('p').slideToggle(200);
+});

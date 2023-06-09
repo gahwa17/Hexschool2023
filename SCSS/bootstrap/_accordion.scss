@@ -2,6 +2,7 @@
 // Base styles
 //
 
+// Accordion icon postion move to before
 .accordion-button {
   position: relative;
   display: flex;
@@ -18,24 +19,23 @@
   @include transition($accordion-transition);
 
   &:not(.collapsed) {
-    color: $accordion-button-active-color;
-    background-color: $accordion-button-active-bg;
+    // color: $accordion-button-active-color;
+    // background-color: $accordion-button-active-bg;
     box-shadow: inset 0 ($accordion-border-width * -1) 0 $accordion-border-color;
 
-    &::after {
-      background-image: escape-svg($accordion-button-active-icon);
+    &::before {
+      background-image: url("../../img/icons/remove.png"); // Make my remove-icon
       transform: $accordion-icon-transform;
     }
   }
 
-  // Accordion icon
-  &::after {
+  &::before {
     flex-shrink: 0;
     width: $accordion-icon-width;
     height: $accordion-icon-width;
-    margin-left: auto;
+    margin-right: 16px;
     content: "";
-    background-image: escape-svg($accordion-button-icon);
+    background-image: url("../../img/icons/add.png"); // Make my add-icon
     background-repeat: no-repeat;
     background-size: $accordion-icon-width;
     @include transition($accordion-icon-transition);
