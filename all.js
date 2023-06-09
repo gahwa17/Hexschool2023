@@ -47,5 +47,6 @@ navbarTogglerIcon.innerHTML = (currentIcon === "menu") ? "close" : "menu";
 
 
 $(".accordion-item").click(function (e) {
-  $(this).toggleClass('show');
+  // 在自身元素增加 .show，並選到同層的元素(siblings())同時取消賦予的 .show 效果
+  $(this).addClass("show").siblings().removeClass("show");
 });

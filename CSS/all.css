@@ -11476,11 +11476,11 @@ img {
   border-radius: 16px;
 }
 .accordion-item:hover {
-  border: 1px solid #f8f9fa;
+  border-color: #f8f9fa;
 }
 
 .accordion-item.show {
-  border-color: #f8f9fa;
+  border-color: #fff;
 }
 
 @media (max-width: 768px) {
