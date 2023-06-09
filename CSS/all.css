@@ -11471,10 +11471,14 @@ img {
 }
 
 /* Search */
-.search .form-control {
-  border: 0;
-  background-color: #F2F2F2;
-  color: #212529;
+.search > *:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.dropdown > *:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .search {
@@ -11482,19 +11486,26 @@ img {
   display: inline-block;
   width: 100%;
 }
-.search > *:focus {
-  outline: none;
-  box-shadow: none;
+.search .form-control {
+  border: 0;
+  background-color: #F2F2F2;
+  color: #212529;
 }
-
 .search input {
   padding: 20px 40px 20px 76px;
 }
-
-.search .material-icons { /*左邊圖示*/
+.search .material-icons {
   position: absolute;
   left: 42px;
   top: calc(50% - 0.5em);
+}
+
+.btn-filter {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #F2F2F2;
+  padding: 20px 32px;
 }
 
 /* FQA */
