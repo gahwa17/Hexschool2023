@@ -1358,6 +1358,10 @@
   font-size: calc(1.425rem + 2.1vw) !important;
 }
 
+.fs-28 {
+  font-size: calc(1.3rem + 0.6vw) !important;
+}
+
 .fst-italic {
   font-style: italic !important;
 }
@@ -2304,6 +2308,9 @@
   .fs-sm-48 {
     font-size: calc(1.425rem + 2.1vw) !important;
   }
+  .fs-sm-28 {
+    font-size: calc(1.3rem + 0.6vw) !important;
+  }
   .text-sm-start {
     text-align: left !important;
   }
@@ -2970,6 +2977,9 @@
   }
   .fs-md-48 {
     font-size: calc(1.425rem + 2.1vw) !important;
+  }
+  .fs-md-28 {
+    font-size: calc(1.3rem + 0.6vw) !important;
   }
   .text-md-start {
     text-align: left !important;
@@ -3638,6 +3648,9 @@
   .fs-lg-48 {
     font-size: calc(1.425rem + 2.1vw) !important;
   }
+  .fs-lg-28 {
+    font-size: calc(1.3rem + 0.6vw) !important;
+  }
   .text-lg-start {
     text-align: left !important;
   }
@@ -4304,6 +4317,9 @@
   }
   .fs-xl-48 {
     font-size: calc(1.425rem + 2.1vw) !important;
+  }
+  .fs-xl-28 {
+    font-size: calc(1.3rem + 0.6vw) !important;
   }
   .text-xl-start {
     text-align: left !important;
@@ -4972,6 +4988,9 @@
   .fs-xxl-48 {
     font-size: calc(1.425rem + 2.1vw) !important;
   }
+  .fs-xxl-28 {
+    font-size: calc(1.3rem + 0.6vw) !important;
+  }
   .text-xxl-start {
     text-align: left !important;
   }
@@ -5001,6 +5020,9 @@
   .fs-48 {
     font-size: 3rem !important;
   }
+  .fs-28 {
+    font-size: 1.75rem !important;
+  }
   .fs-sm-1 {
     font-size: 2.5rem !important;
   }
@@ -5018,6 +5040,9 @@
   }
   .fs-sm-48 {
     font-size: 3rem !important;
+  }
+  .fs-sm-28 {
+    font-size: 1.75rem !important;
   }
   .fs-md-1 {
     font-size: 2.5rem !important;
@@ -5037,6 +5062,9 @@
   .fs-md-48 {
     font-size: 3rem !important;
   }
+  .fs-md-28 {
+    font-size: 1.75rem !important;
+  }
   .fs-lg-1 {
     font-size: 2.5rem !important;
   }
@@ -5054,6 +5082,9 @@
   }
   .fs-lg-48 {
     font-size: 3rem !important;
+  }
+  .fs-lg-28 {
+    font-size: 1.75rem !important;
   }
 }
 @media print {
