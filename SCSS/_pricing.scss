@@ -21,6 +21,9 @@
         border-color: $light;
         cursor: pointer;
     }
+    .card-footer, .card-body {
+        padding: 20px 32px;
+    }
 }
 
 .mark-disc {

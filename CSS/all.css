@@ -11265,6 +11265,9 @@ img {
   border-color: #f8f9fa;
   cursor: pointer;
 }
+.price-item .card-footer, .price-item .card-body {
+  padding: 20px 32px;
+}
 
 .mark-disc {
   position: relative;
