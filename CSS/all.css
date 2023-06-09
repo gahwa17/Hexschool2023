@@ -4386,6 +4386,7 @@ textarea.form-control-lg {
   background-color: #000;
   border: 0;
   border-radius: 0;
+  border-radius: 16px;
   overflow-anchor: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
 }
@@ -4433,34 +4434,12 @@ textarea.form-control-lg {
 
 .accordion-item {
   background-color: #000;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-}
-.accordion-item:first-of-type {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
-.accordion-item:first-of-type .accordion-button {
-  border-top-left-radius: calc(1rem - 1px);
-  border-top-right-radius: calc(1rem - 1px);
-}
-.accordion-item:not(:first-of-type) {
-  border-top: 0;
-}
-.accordion-item:last-of-type {
-  border-bottom-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-}
-.accordion-item:last-of-type .accordion-button.collapsed {
-  border-bottom-right-radius: calc(1rem - 1px);
-  border-bottom-left-radius: calc(1rem - 1px);
-}
-.accordion-item:last-of-type .accordion-collapse {
-  border-bottom-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
 }
 
 .accordion-body {
   padding: 1rem 1.25rem;
+  line-height: 150%;
+  padding-top: 0;
 }
 
 .accordion-flush .accordion-collapse {
@@ -11492,20 +11471,16 @@ img {
 }
 
 /* FQA */
-.question-item {
-  padding: 20px 40px;
+.accordion-item {
+  border: 1px solid #525252;
   border-radius: 16px;
-  /*  避免active才出現border導致空間擠壓的小型位移現象  */
-  border: solid 1px #ffffff;
-  transition: 0.1s ease;
+}
+.accordion-item:hover {
+  border: 1px solid #f8f9fa;
 }
 
-.question-item.active {
-  border: solid 1px #ffffff;
-}
-
-.question-item:hover {
-  border-color: #ffffff;
+.accordion-item.show {
+  border-color: #f8f9fa;
 }
 
 @media (max-width: 768px) {

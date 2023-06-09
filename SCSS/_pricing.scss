@@ -32,20 +32,15 @@
 }
 
 /* FQA */
-.question-item {
-    padding: 20px 40px;
+.accordion-item {
+    border: 1px solid $black-80;
     border-radius: 16px;
-    /*  避免active才出現border導致空間擠壓的小型位移現象  */
-    border: solid 1px #ffffff;
-    transition: 0.1s ease;
+    &:hover {
+        border: 1px solid $light;
+    }
 }
-
-.question-item.active {
-    border: solid 1px #ffffff;
-}
-
-.question-item:hover {
-    border-color: #ffffff;
+.accordion-item.show {
+    border-color: $light;
 }
 
 
