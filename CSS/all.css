@@ -11001,7 +11001,6 @@ a:link, a:visited {
 *::before,
 ::after {
   box-sizing: border-box;
-  outline: 1px solid #343a40;
 }
 
 body {
@@ -11239,5 +11238,41 @@ img {
   .sitemap .logo {
     order: 0;
     margin-bottom: 20px;
+  }
+}
+/* Service */
+.price-list .card {
+  background: #000;
+}
+
+.price-item {
+  width: calc(50% - 36px);
+  border: 1px solid #525252;
+  display: flex;
+  flex-direction: column;
+}
+.price-item li {
+  list-style-type: disc;
+  padding: 0px 0px;
+}
+.price-item li:not(:last-child) {
+  margin-bottom: 8px;
+}
+.price-item span {
+  font-size: 16px;
+}
+.price-item:hover {
+  border-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.mark-disc {
+  position: relative;
+  left: 16px;
+}
+
+@media (max-width: 768px) {
+  .price-item {
+    width: 100%;
   }
 }/*# sourceMappingURL=all.css.map */

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI工具王</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="CSS/all.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header border-bottom border-light py-3 mb-3">           
+            <!-- 正常視窗下，原來的導覽列 -->
+            <nav class="navbar navbar-expand-md">
+                <div class="logo">
+                    <!-- 若a連結內不加文字，整張圖會消失Q -->
+                    <h1><a href="./home.html"><img src="../img/logo.png" alt="AI工具王"></a></h1>
+                </div>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Navbarshow" >
+                    <!-- 漢堡原來是黑的，要加上text-white -->
+                    <span class="navbar-toggler-icon material-icons text-white">menu</span>
+                </button>
+                <!-- 把原先的ul固定到最左邊，搭配d-flex跟justify-content-end
+                    但是d-flex的存在會強制手機板的漢堡強制打開，縮不回來
+                    所以改成d-md-flex，只在網頁版時才這樣固定在左側
+                -->
+                <div id="Navbarshow" class="collapse navbar-collapse d-md-flex justify-content-end">
+                    <ul class="nav text-center gap-2">
+                        <li class="nav-item">
+                            <!-- 
+                                1. 要加nav-link才會滿版
+                                2. a預設是link-primary(且該網站目前primary是橘色，改成secondary)
+                            -->
+                            <a class="nav-link link-secondary py-3" href="#">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-secondary py-3" href="#">定價</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="banner">
+            <p class="display-2 fw-bolder whitespace-pre-line"> 透過
+                AI 工具王的
+                強大模型
+                讓您的業務
+                更聰明
+            </p>
+            <a class="btn btn-outline-light fw-bold fs-5 px-4 py-3 my-5" href="#">開始使用</a>
+            <div class="banner-animation d-flex justify-content-end">
+                <img src="./img/deco.png" alt="animation">
+                <img src="./img/deco.png" alt="animation">
+                <img src="./img/deco.png" alt="animation">
+            </div>
+        </div>
+        <div class="price mt-8">
+            <h3 class="fs-2 fw-bold mb-4">定價</h3>
+            <ul class="price-list d-flex flex-wrap gap-3">
+                <li class="card price-item d-flex">
+                    <div class="card-body">
+                        <h4 class="fs-2 fw-bolder mb-3">琪琪</h4>
+                        <ul class="flex-grow-1">
+                            <li class="mark-disc">初級</li>
+                            <li class="mark-disc">速度最快</li>
+                        </ul>
+                    </div>
+                    <div class="card-body d-flex justify-content-between border-top border-secondary">
+                        <p class="fw-bold">NT$5<span class="text-muted">／1k tokens</span></p>
+                        <p>開始使用<span class="material-icons align-middle ms-2">call_made</span></p>
+                    </div>
+                </li>
+                <li class="card price-item d-flex">
+                    <div class="card-body">
+                        <h4 class="fs-2 fw-bolder mb-3">昊昊</h4>
+                        <ul class="flex-grow-1">
+                            <li class="mark-disc">中級</li>
+                        </ul>
+                    </div>
+                    <div class="card-body d-flex justify-content-between border-top border-secondary">
+                        <p class="fw-bold">NT$5<span class="text-muted">／1k tokens</span></p>
+                        <p>開始使用<span class="material-icons align-middle ms-2">call_made</span></p>
+                    </div>
+                </li>
+                <li class="card price-item">
+                    <div class="card-body">
+                        <h4 class="fs-2 fw-bolder mb-3">卡卡</h4>
+                        <ul>
+                            <li class="mark-disc">高級</li>
+                        </ul>
+                    </div>
+                    <div class="card-body d-flex justify-content-between border-top border-secondary">
+                        <p class="fw-bold">NT$5<span class="text-muted">／1k tokens</span></p>
+                        <p>開始使用<span class="material-icons align-middle ms-2">call_made</span></p>
+                    </div>
+                </li>
+                <li class="card price-item">
+                    <div class="card-body">
+                        <h4 class="fs-2 fw-bolder mb-3">杰杰</h4>
+                        <ul>
+                            <li class="mark-disc">最高級</li>
+                            <li class="mark-disc">資料最完善</li>
+                        </ul>
+                    </div>
+                    <div class="card-body d-flex justify-content-between border-top border-secondary">
+                        <p class="fw-bold">NT$5<span class="text-muted">／1k tokens</span></p>
+                        <p>開始使用<span class="material-icons align-middle ms-2">call_made</span></p>
+                    </div>
+                </li>
+            </ul>
+        <div class="spec mt-8">
+            <div class="row">
+                <h3 class="fs-2 fw-bold col-12 col-md-4 mb-4">使用規範</h3>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg-white border-radius-160 py-7 py-lg-8">
+        <div class="container">
+            <div class="tool text-black">
+                <h1 class="display-3 fw-bolder text-center">這些超酷的應用，都來自 AI工具王</h1>
+                <!-- <input type="search" name="" id=""><img src="" alt="" class="search-icon"></input>
+                <div class="filter-list">
+                    <select name="" id="" class="filter"></select>
+                    <ul class="filter-type">
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                    <select name="" id="" class="orderBy"></select>
+                </div> -->
+                <ul class="tool-list d-flex flex-wrap justify-content-center my-6 gap-3 lh-base">
+                    <li class="card overflow-hidden tool-item">
+                      <div class="img-container">
+                        <img class="zoom" src="./img/tool1.png" alt="Chatbot Builder">
+                      </div>
+                      <div class="content-container">
+                        <div class="ai-desc">
+                          <h3 class="fw-bolder fs-5">Chatbot Builder</h3>
+                          <p class="caption lh-150">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
+                        </div>
+                        <div class="ai-info">
+                          <span class="fw-700">AI 模型</span>
+                          <span>卡卡</span>
+                        </div>
+                        <div class="ai-hashtag">
+                          <span>#聊天</span>
+                          <a href="#" class="material-icons">share</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="card overflow-hidden tool-item">
+                      <div class="img-container">
+                        <img class="zoom" src="./img/tool2.png" alt="Image Recognition Platform">
+                      </div>
+                      <div class="content-container">
+                        <div class="ai-desc">
+                          <h3 class="fw-bolder fs-5">Image Recognition Platform</h3>
+                          <p class="caption lh-150">專業的圖像識別平台，識別圖像、分類、標記等。</p>
+                        </div>
+                        <div class="ai-info">
+                          <span class="fw-700">AI 模型</span>
+                          <span>杰杰</span>
+                        </div>
+                        <div class="ai-hashtag">
+                          <span>#影像辨識</span>
+                          <a href="#" class="material-icons">share</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="card overflow-hidden tool-item">
+                      <div class="img-container">
+                        <img class="zoom" src="./img/tool3.png" alt="Language Translation API">
+                      </div>
+                      <div class="content-container">
+                        <div class="ai-desc">
+                          <h3 class="fw-bolder fs-5">Language Translation API</h3>
+                          <p class="caption lh-150">專業的語言翻譯 API，實現文本翻譯功能，支援多種格式的文本。</p>
+                        </div>
+                        <div class="ai-info">
+                          <span class="fw-700">AI 模型</span>
+                          <span>琪琪</span>
+                        </div>
+                        <div class="ai-hashtag">
+                          <span>#翻譯</span>
+                          <a href="#" class="material-icons">share</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="card overflow-hidden tool-item">
+                      <div class="img-container">
+                        <img class="zoom" src="./img/tool4.png" alt="Sentiment Analysis API">
+                      </div>
+                      <div class="content-container">
+                        <div class="ai-desc">
+                          <h3 class="fw-bolder fs-5">Sentiment Analysis API</h3>
+                          <p class="caption lh-150">自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。</p>
+                        </div>
+                        <div class="ai-info">
+                          <span class="fw-700">AI 模型</span>
+                          <span>昊昊</span>
+                        </div>
+                        <div class="ai-hashtag">
+                          <span>#行銷</span>
+                          <a href="#" class="material-icons">share</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="card overflow-hidden tool-item">
+                      <div class="img-container">
+                        <img class="zoom" src="./img/tool5.png" alt="Fraud Detection Platform">
+                      </div>
+                      <div class="content-container">
+                        <div class="ai-desc">
+                          <h3 class="fw-bolder fs-5">Fraud Detection Platform</h3>
+                          <p class="caption lh-150">預防詐騙活動，適用於銀行、金融、電商等。</p>
+                        </div>
+                        <div class="ai-info">
+                          <span class="fw-700">AI 模型</span>
+                          <span>卡卡</span>
+                        </div>
+                        <div class="ai-hashtag">
+                          <span>#客服</span>
+                          <a href="#" class="material-icons">share</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="card overflow-hidden tool-item">
+                      <div class="img-container">
+                        <img class="zoom" src="./img/tool6.png" alt="Voice Assistant SDK">
+                      </div>
+                      <div class="content-container">
+                        <div class="ai-desc">
+                          <h3 class="fw-bolder fs-5">Voice Assistant SDK</h3>
+                          <p class="caption lh-150">通過語音控制應用程式、設備，實現多種功能，例如播放音樂、查詢天氣、發送信息等。</p>
+                        </div>
+                        <div class="ai-info">
+                          <span class="fw-700">AI 模型</span>
+                          <span>杰杰</span>
+                        </div>
+                        <div class="ai-hashtag">
+                          <span>#生產力</span>
+                          <a href="#" class="material-icons">share</a>
+                        </div>
+                      </div>
+                    </li>
+                </ul>
+                <ul class="pagination d-flex justify-content-end align-items-center gap-1">
+                    <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link text-primary" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link text-primary" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link text-primary" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link text-primary" href="#">5</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#"><span class="material-icons text-primary">keyboard_arrow_right</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="fqa"></div>
+        <div class="sitemap border-top border-secondary border-bottom py-7 d-flex justify-content-between flex-wrap">
+            <ul class="sitemap-list">
+                <li><a class="link-secondary display-5 display-md-1 fw-bolder mb-2" href="#">首頁</a></li>
+                <li><a class="link-secondary display-5 display-md-1 fw-bolder" href="#">定價</a></li>
+            </ul>
+            <div class="logo">
+                <div class="logo">
+                    <h1><a href="./home.html"><img src="../img/logo.png" alt="AI工具王"></a></h1>
+                </div>
+            </div>
+        </div>
+        <div class="footer d-flex justify-content-between fw-bold pt-5 pb-3">
+            <div class="d-flex justify-content-between flex-column flex-md-row">
+                <p>AI工具王 ©2023</p>
+                <ul class="social d-flex flex-wrap gap-3 ms-md-5">
+                    <li><a class="link-secondary" href="#">Facebook</a></li>
+                    <li><a class="link-secondary" href="#">Twitter</a></li>
+                    <li><a class="link-secondary" href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <!-- align-self-start 避免social的mt把a連結高度一起拉高 -->
+            <a class="align-self-start" href="#">
+                Back to Top
+                <!-- <span class="ms-2 align-middle material-icons">arrow_upward</span> -->
+                <!-- 箭頭變小fs-6，把span改sub讓他在副標題的位置 -->
+                <sub class="fs-6 ms-2 material-icons">arrow_upward</sub>
+            </a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="all.js"></script>
+</body>
+</html>
