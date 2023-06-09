@@ -161,7 +161,10 @@
     border-radius: 16px;
 }
 
+/* Sitemap */
+.sitemap {
 
+}
 
 /* Custimized Utility */ 
 .display-1 {
@@ -217,4 +220,13 @@
     .social {
         margin-bottom: 36px;
     }
+    .sitemap {
+        .sitemap-list {
+            order: 1;
+        }
+        .logo {
+            order: 0;
+            margin-bottom: 20px;
+        }
+    }    
 }

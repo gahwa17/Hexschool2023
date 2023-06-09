@@ -11183,6 +11183,7 @@ img {
   border-radius: 16px;
 }
 
+/* Sitemap */
 /* Custimized Utility */
 .display-1 {
   display: block;
@@ -11231,5 +11232,12 @@ img {
   }
   .social {
     margin-bottom: 36px;
+  }
+  .sitemap .sitemap-list {
+    order: 1;
+  }
+  .sitemap .logo {
+    order: 0;
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=all.css.map */
