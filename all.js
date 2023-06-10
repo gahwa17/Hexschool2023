@@ -45,8 +45,20 @@ var currentIcon = navbarTogglerIcon.innerHTML;
 navbarTogglerIcon.innerHTML = (currentIcon === "menu") ? "close" : "menu";
 });
 
-
+// Pricing page
 $(".accordion-item").click(function (e) {
   // 在自身元素增加 .show，並選到同層的元素(siblings())同時取消賦予的 .show 效果
   $(this).addClass("show").siblings().removeClass("show");
 });
+
+// Use data-*attribute to custimize class name and switch btn-filter name
+$(".dropdown-item[data-sort='new-to-old']").click(function (e) {
+  e.preventDefault();
+  $(".dropdown-btnText").text("由新到舊");
+});
+$(".dropdown-item[data-sort='old-to-new']").click(function (e) {
+  e.preventDefault();
+  $(".dropdown-btnText").text("由舊到新");
+});
+// .dropdown-item[data-key="old-to-new"]
+

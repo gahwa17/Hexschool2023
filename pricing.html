@@ -147,7 +147,7 @@
                 <!-- 分類器 -->
                 <div class="filter d-flex justify-content-between">
                   <div class="dropdown">
-                    <button class="btn btn-filter btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-secondary btn-search-bar btn-filter" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       篩選
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -180,14 +180,13 @@
                     </li>
                   </ul>
                   <div class="dropdown">
-                    <button class="btn btn-filter btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                      由新到舊
+                    <button class="btn btn-secondary btn-search-bar btn-orderBy" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="dropdown-btnText">由新到舊</span>
                       <span class="material-icons fs-normal ml-12">expand_more</span>
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <ul class="dropdown-menu filter-menu" aria-labelledby="dropdownMenuButton2">
+                      <li><a data-sort= "new-to-old" class="dropdown-item" href="">由新到舊</a></li>
+                      <li><a data-sort= "old-to-new" class="dropdown-item" href="">由舊到新</a></li>
                     </ul>
                   </div>
                 </div>

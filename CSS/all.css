@@ -11378,7 +11378,6 @@ img {
   border-radius: 16px;
 }
 
-/* Sitemap */
 /* Custimized Utility */
 .display-1 {
   display: block;
@@ -11470,7 +11469,7 @@ img {
   left: 16px;
 }
 
-/* Search */
+/* Tool-list: Search */
 .search > *:focus {
   outline: none;
   box-shadow: none;
@@ -11500,12 +11499,29 @@ img {
   top: calc(50% - 0.5em);
 }
 
-.btn-filter {
+.btn-search-bar {
   display: flex;
   align-items: center;
   background-color: #fff;
+  color: #212529;
   border: 1px solid #F2F2F2;
+  border-radius: 16px;
   padding: 20px 32px;
+}
+.btn-search-bar:hover, .btn-search-bar:focus {
+  background-color: #fff;
+  color: #212529;
+  border-color: #212529;
+}
+
+a.dropdown-item {
+  color: #212529;
+  padding: 16px 20px;
+}
+
+a.dropdown-item:active {
+  background-color: #fff;
+  color: #212529;
 }
 
 /* FQA */
