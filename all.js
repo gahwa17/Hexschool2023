@@ -54,11 +54,14 @@ $(".accordion-item").click(function (e) {
 // Use data-*attribute to custimize class name and switch btn-filter name
 $(".dropdown-item[data-sort='new-to-old']").click(function (e) {
   e.preventDefault();
+  $(this).toggleClass("filter-active");
+  $(".dropdown-item[data-sort='old-to-new']").removeClass("filter-active");
   $(".dropdown-btnText").text("由新到舊");
 });
 $(".dropdown-item[data-sort='old-to-new']").click(function (e) {
   e.preventDefault();
+  $(this).toggleClass("filter-active");
+  $(".dropdown-item[data-sort='new-to-old']").removeClass("filter-active");
   $(".dropdown-btnText").text("由舊到新");
 });
-// .dropdown-item[data-key="old-to-new"]
 

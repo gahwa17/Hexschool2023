@@ -32,7 +32,6 @@
 }
 
 /* Tool-list: Search */
-
 // Remove outer border and shadow of input on focus state
 .search > *:focus {
     outline: none;
@@ -42,7 +41,6 @@
     outline: none;
     box-shadow: none;
 }
-
 .search {
     position: relative;
     display: inline-block;
@@ -62,6 +60,7 @@
     }
 }
 
+/* Tool-list: Filter */
 // Custimize dropdown css style
 .btn-search-bar {
     display: flex;
@@ -79,12 +78,35 @@
 }
 a.dropdown-item {
     color: $dark;
-    padding: 16px 20px;
+    padding: 8px 16px;
 }
-
 a.dropdown-item:active {
     background-color: $white;
     color: $dark;
+}
+
+// filter-type
+a.filter-type-active {
+    background-color: $black-20;
+    border-radius: 16px;
+    color: black;
+    font-weight: 900;
+} 
+a.filter-active::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/icons/check.png);
+    position: absolute;
+    left: 120px;
+}
+a.filter-orderBy-active::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/icons/check.png);
+    position: absolute;
+    left: 120px;
 }
 
 /* FQA */

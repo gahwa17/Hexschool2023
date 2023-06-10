@@ -11499,6 +11499,7 @@ img {
   top: calc(50% - 0.5em);
 }
 
+/* Tool-list: Filter */
 .btn-search-bar {
   display: flex;
   align-items: center;
@@ -11516,12 +11517,37 @@ img {
 
 a.dropdown-item {
   color: #212529;
-  padding: 16px 20px;
+  padding: 8px 16px;
 }
 
 a.dropdown-item:active {
   background-color: #fff;
   color: #212529;
+}
+
+a.filter-type-active {
+  background-color: #F2F2F2;
+  border-radius: 16px;
+  color: black;
+  font-weight: 900;
+}
+
+a.filter-active::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/icons/check.png);
+  position: absolute;
+  left: 120px;
+}
+
+a.filter-orderBy-active::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/icons/check.png);
+  position: absolute;
+  left: 120px;
 }
 
 /* FQA */
