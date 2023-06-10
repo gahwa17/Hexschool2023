@@ -11,37 +11,26 @@
 </head>
 <body>
     <div class="container">
-        <div class="header border-bottom border-light py-3 mb-3">           
-            <!-- 正常視窗下，原來的導覽列 -->
-            <nav class="navbar navbar-expand-md">
-                <div class="logo">
-                    <!-- 若a連結內不加文字，整張圖會消失Q -->
-                    <h1><a href="./home.html"><img src="../img/logo.png" alt="AI工具王"></a></h1>
-                </div>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Navbarshow" >
-                    <!-- 漢堡原來是黑的，要加上text-white -->
-                    <span class="navbar-toggler-icon material-icons text-white">menu</span>
-                </button>
-                <!-- 把原先的ul固定到最左邊，搭配d-flex跟justify-content-end
-                    但是d-flex的存在會強制手機板的漢堡強制打開，縮不回來
-                    所以改成d-md-flex，只在網頁版時才這樣固定在左側
-                -->
-                <div id="Navbarshow" class="collapse navbar-collapse d-md-flex justify-content-end">
-                    <ul class="nav text-center gap-2">
-                        <li class="nav-item">
-                            <!-- 
-                                1. 要加nav-link才會滿版
-                                2. a預設是link-primary(且該網站目前primary是橘色，改成secondary)
-                            -->
-                            <a class="nav-link link-secondary py-3" href="#">首頁</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-secondary py-3" href="#">定價</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+      <div class="header border-bottom border-light py-3 mb-3">
+        <nav class="navbar navbar-expand-md">
+            <div class="logo">
+                <h1><a href="./home.html"><img src="../img/logo.png" alt="AI工具王"></a></h1>
+            </div>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Navbarshow" >
+                <span class="navbar-toggler-icon material-icons text-white">menu</span>
+            </button>
+            <div id="Navbarshow" class="collapse navbar-collapse d-md-flex justify-content-end">
+                <ul class="nav text-center gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary py-3" href="home.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary py-3" href="pricing.html">定價</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      </div>
         <div class="banner">
             <p class="display-2 fw-bolder whitespace-pre-line"> 透過
                 AI 工具王的
@@ -50,11 +39,11 @@
                 更聰明
             </p>
             <a class="btn btn-outline-light fw-bold fs-5 px-4 py-3 my-5" href="#">開始使用</a>
-            <div class="banner-animation d-flex justify-content-end">
-                <img src="./img/deco.png" alt="animation">
-                <img src="./img/deco.png" alt="animation">
-                <img src="./img/deco.png" alt="animation">
-            </div>
+        </div>
+        <div class="banner-animation d-flex justify-content-end mt-8">
+          <img class="grass-icon" src="./img/deco.png" alt="grass">
+          <img class="grass-icon" src="./img/deco.png" alt="grass">
+          <img class="grass-icon" src="./img/deco.png" alt="grass">
         </div>
         <div class="service mt-8">
             <div class="row">
@@ -159,20 +148,71 @@
         <div class="container">
             <div class="tool text-black">
                 <h1 class="display-3 fw-bolder text-center">這些超酷的應用，都來自 AI工具王</h1>
-                <!-- <input type="search" name="" id=""><img src="" alt="" class="search-icon"></input>
-                <div class="filter-list">
-                    <select name="" id="" class="filter"></select>
-                    <ul class="filter-type">
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
+                <!-- 搜尋欄 -->
+                <div class="search my-4 my-lg-6">
+                  <span class="material-icons text-secondary">search</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="輸入關鍵字搜尋"
+                  />
+                </div>
+                <!-- 分類器 -->
+                <div class="filter d-flex justify-content-between align-items-center flex-wrap">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary btn-search-bar btn-filter" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      篩選
+                      <span class="material-icons ms-2">filter_alt</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><h6 class="dropdown-header fw-bold">AI 模型</h6></li>
+                      <li><a class="dropdown-item filter-active" href="#">所有模型</a></li>
+                      <li><a class="dropdown-item" href="#">gpt3.5</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><h6 class="dropdown-header fw-bold">類型</h6></li>
+                      <li><a class="dropdown-item" href="#">所有類型</a></li>
+                      <li><a class="dropdown-item" href="#">問答服務</a></li>
+                      <li><a class="dropdown-item" href="#">虛擬客服</a></li>
+                      <li><a class="dropdown-item" href="#">生活應用</a></li>
+                      <li><a class="dropdown-item" href="#">程式知識</a></li>
+                      <li><a class="dropdown-item" href="#">翻譯助手</a></li>
+                      <li><a class="dropdown-item" href="#">行銷文案</a></li>
                     </ul>
-                    <select name="" id="" class="orderBy"></select>
-                </div> -->
+                  </div>
+                  <ul class="nav filter-list order-last order-lg-0 gap-1">
+                    <li class="nav-item">
+                      <a class="nav-link filter-type-active" aria-current="" href="#">全部</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" href="#">問答服務</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" href="#">虛擬客服</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" href="#">生活應用</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" href="#">程式知識</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" href="#">翻譯助手</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" href="#">行銷文案</a>
+                    </li>
+                  </ul>
+                  <div class="dropdown">
+                    <button class="btn btn-secondary btn-search-bar btn-orderBy" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="dropdown-btnText">由新到舊</span>
+                      <span class="material-icons ms-2">expand_more</span>
+                    </button>
+                    <ul class="dropdown-menu filter-menu" aria-labelledby="dropdownMenuButton2">
+                      <li><a data-sort= "new-to-old" class="dropdown-item filter-active" href="">由新到舊</a></li>
+                      <li><a data-sort= "old-to-new" class="dropdown-item" href="">由舊到新</a></li>
+                    </ul>
+                  </div>
+                </div>
                 <ul class="tool-list d-flex flex-wrap justify-content-center my-6 gap-3 lh-base">
                     <li class="card overflow-hidden tool-item">
                       <div class="img-container">
@@ -289,6 +329,7 @@
                       </div>
                     </li>
                 </ul>
+                <!-- 分頁表 -->
                 <ul class="pagination d-flex justify-content-end align-items-center gap-1">
                     <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
                     <li class="page-item"><a class="page-link text-primary" href="#">2</a></li>
@@ -341,6 +382,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="all.js"></script>
 </body>
 </html>

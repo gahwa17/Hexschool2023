@@ -31,100 +31,6 @@
     left: 16px;
 }
 
-/* Tool-list: Search */
-// Remove outer border and shadow of input on focus state
-.search > *:focus {
-    outline: none;
-    box-shadow: none;
-}
-.dropdown > *:focus {
-    outline: none;
-    box-shadow: none;
-}
-.search {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    .form-control {
-        border: 0;
-        background-color: $black-20;
-        color: $dark;
-    }
-    input {
-        padding: 20px 40px 20px 76px;
-    }
-    .material-icons {
-        position: absolute;
-        left: 42px;
-        top: calc(50% - 0.5em);
-    }
-}
-
-/* Tool-list: Filter */
-// Custimize dropdown css style
-.btn-search-bar {
-    display: flex;
-    align-items: center;
-    background-color: $white;
-    color: $dark;
-    border: 1px solid $black-20;
-    border-radius: 16px;
-    padding: 20px 32px;
-    &:hover, &:focus {
-        background-color: $white;
-        color: $dark;
-        border-color: $dark;
-    }
-}
-a.dropdown-item {
-    color: $dark;
-    padding: 8px 16px;
-}
-a.dropdown-item:active {
-    background-color: $white;
-    color: $dark;
-}
-
-.filter-list {
-    display: flex;
-    flex-wrap: nowrap;
-    white-space: nowrap; // Remain horizontal content
-    overflow-x: auto;
-}
-/* Hide scrollbar for Chrome, Safari and Opera */
-.filter-list::-webkit-scrollbar {
-    display: none;
-}
-/* Hide scrollbar for IE, Edge and Firefox */
-.filter-list {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-}
-
-// filter-type
-a.filter-type-active {
-    background-color: $black-20;
-    border-radius: 16px;
-    color: black;
-    font-weight: 900;
-} 
-a.filter-active::before {
-    content: "";
-    width: 16px;
-    height: 16px;
-    background-image: url(../img/icons/check.png);
-    position: absolute;
-    left: 120px;
-}
-a.filter-orderBy-active::before {
-    content: "";
-    width: 16px;
-    height: 16px;
-    background-image: url(../img/icons/check.png);
-    position: absolute;
-    left: 120px;
-}
-
 /* FQA */
 .accordion-item {
     border: 1px solid $black-80;
@@ -149,7 +55,6 @@ a.filter-orderBy-active::before {
     }
 
 }
-
 @media(max-width: 376px){
 
 }

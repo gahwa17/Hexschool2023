@@ -11,32 +11,21 @@
 </head>
 <body>
     <div class="container">
-        <div class="header border-bottom border-light py-3 mb-3">           
-            <!-- 正常視窗下，原來的導覽列 -->
+        <div class="header border-bottom border-light py-3 mb-3">
             <nav class="navbar navbar-expand-md">
                 <div class="logo">
-                    <!-- 若a連結內不加文字，整張圖會消失Q -->
                     <h1><a href="./home.html"><img src="../img/logo.png" alt="AI工具王"></a></h1>
                 </div>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Navbarshow" >
-                    <!-- 漢堡原來是黑的，要加上text-white -->
                     <span class="navbar-toggler-icon material-icons text-white">menu</span>
                 </button>
-                <!-- 把原先的ul固定到最左邊，搭配d-flex跟justify-content-end
-                    但是d-flex的存在會強制手機板的漢堡強制打開，縮不回來
-                    所以改成d-md-flex，只在網頁版時才這樣固定在左側
-                -->
                 <div id="Navbarshow" class="collapse navbar-collapse d-md-flex justify-content-end">
                     <ul class="nav text-center gap-2">
                         <li class="nav-item">
-                            <!-- 
-                                1. 要加nav-link才會滿版
-                                2. a預設是link-primary(且該網站目前primary是橘色，改成secondary)
-                            -->
-                            <a class="nav-link link-secondary py-3" href="#">首頁</a>
+                            <a class="nav-link link-secondary py-3" href="home.html">首頁</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-secondary py-3" href="#">定價</a>
+                            <a class="nav-link link-secondary py-3" href="pricing.html">定價</a>
                         </li>
                     </ul>
                 </div>
@@ -54,10 +43,10 @@
                 </p>
             </div>
         </div>
-        <div class="banner-animation d-flex justify-content-start mt-8">
-            <img src="./img/deco.png" alt="animation">
-            <img src="./img/deco.png" alt="animation">
-            <img src="./img/deco.png" alt="animation">
+        <div class="banner-animation d-flex justify-content-end mt-8">
+          <img class="grass-icon" src="./img/deco.png" alt="grass">
+          <img class="grass-icon" src="./img/deco.png" alt="grass">
+          <img class="grass-icon" src="./img/deco.png" alt="grass">
         </div>
         <div class="price mt-8">
             <h3 class="fs-2 fw-bold mb-4">定價</h3>
@@ -316,6 +305,7 @@
                       </div>
                     </li>
                 </ul>
+                <!-- 分頁表 -->
                 <ul class="pagination d-flex justify-content-end align-items-center gap-1">
                     <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
                     <li class="page-item"><a class="page-link text-primary" href="#">2</a></li>
