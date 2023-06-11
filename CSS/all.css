@@ -11620,7 +11620,7 @@ a.filter-orderBy-active::before {
 
 @media (max-width: 992px) {
   .filter-list {
-    margin-top: 24px;
+    margin: 24px auto;
   }
 }
 @media (max-width: 768px) {
