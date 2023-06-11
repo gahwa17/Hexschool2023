@@ -11469,6 +11469,13 @@ a.dropdown-item:active {
   white-space: nowrap;
   overflow-x: auto;
 }
+.filter-list a {
+  color: #919191;
+}
+.filter-list a:hover {
+  background-color: #F2F2F2;
+  border-radius: 16px;
+}
 
 .filter-list::-webkit-scrollbar {
   display: none;
@@ -11486,16 +11493,7 @@ a.filter-type-active {
   font-weight: 900;
 }
 
-a.filter-active::before {
-  content: "";
-  width: 16px;
-  height: 16px;
-  background-image: url(../img/icons/check.png);
-  position: absolute;
-  left: 120px;
-}
-
-a.filter-orderBy-active::before {
+a.filter-active::before, a.filter-orderBy-active::before {
   content: "";
   width: 16px;
   height: 16px;

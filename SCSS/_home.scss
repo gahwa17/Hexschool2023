@@ -252,6 +252,14 @@ a.dropdown-item:active {
     flex-wrap: nowrap;
     white-space: nowrap; // Remain horizontal content
     overflow-x: auto;
+
+    a {
+        color: $black-60;
+        &:hover {
+            background-color: $black-20;
+            border-radius: 16px;
+        }
+    }
 }
 .filter-list::-webkit-scrollbar {
     display: none;
@@ -268,15 +276,8 @@ a.filter-type-active {
     color: black;
     font-weight: 900;
 } 
-a.filter-active::before {
-    content: "";
-    width: 16px;
-    height: 16px;
-    background-image: url(../img/icons/check.png);
-    position: absolute;
-    left: 120px;
-}
-a.filter-orderBy-active::before {
+// filter-item active state
+a.filter-active::before, a.filter-orderBy-active::before {
     content: "";
     width: 16px;
     height: 16px;
