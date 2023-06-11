@@ -12,45 +12,6 @@
     }
 }
 
-/* Banner-animation */
-.banner-animation {
-    li {
-        overflow: hidden;
-    }
-    .grass-icon {
-        width: 180px;
-        height: auto;
-        position: relative;
-        animation-name: banner;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-    }
-    .grass-1 {
-        animation-delay: 0.5s;
-    }
-    
-    .grass-2 {
-        animation-delay: 0.3s;
-    }
-    .grass-3 {
-        animation-delay: 0s;
-    }
-}
-@keyframes banner {
-0% {
-    transform: translateY(100%);
-}
-35% {
-    transform: translateY(0%);
-}
-50% {
-    transform: translateY(0%);
-}
-100% {
-    transform: translateY(-100%);
-}
-}
-
 /* Enterprise */
 .enterprise-list {
     display: flex;
