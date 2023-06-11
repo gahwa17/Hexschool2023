@@ -4399,7 +4399,7 @@ textarea.form-control-lg {
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
 .accordion-button:not(.collapsed)::before {
-  background-image: url("../../img/icons/remove.png");
+  background-image: url("./img/icons/remove.png");
   transform: rotate(-180deg);
 }
 .accordion-button::before {
@@ -4408,7 +4408,7 @@ textarea.form-control-lg {
   height: 1.25rem;
   margin-right: 16px;
   content: "";
-  background-image: url("../../img/icons/add.png");
+  background-image: url("./img/icons/add.png");
   background-repeat: no-repeat;
   background-size: 1.25rem;
   transition: transform 0.2s ease-in-out;
