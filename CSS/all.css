@@ -11205,6 +11205,8 @@ body {
 }
 
 .container {
+  max-width: 1296px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -11530,9 +11532,6 @@ a.filter-orderBy-active::before {
   }
 }
 @media (max-width: 768px) {
-  .container {
-    padding: 30px;
-  }
   .grass-icon {
     width: 117px;
   }
