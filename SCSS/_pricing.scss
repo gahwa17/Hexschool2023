@@ -1,4 +1,4 @@
-/* Service */
+/* Price */
 .price-list .card{
     background: $body-bg;
 }
@@ -42,7 +42,7 @@
     border-color: $white;
 }
 
-
+/* RWD */
 @media(max-width: 992px){
     .filter-list {
         margin: 24px auto;
@@ -52,7 +52,4 @@
     .price-item {
         width: 100%;
     }
-}
-@media(max-width: 376px){
-
 }

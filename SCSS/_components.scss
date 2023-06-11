@@ -1,0 +1,218 @@
+/* Common setting between pages */
+
+/* Header */
+//Logo
+.logo img{
+    display: block; 
+    text-decoration: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: auto; 
+}
+
+/* Tool */
+// Tool-list
+.tool-item {
+    width: 416px;
+    padding: 0px; // Remove _grid.scss padding
+
+    .img-container {
+        overflow: hidden;
+        .zoom {
+            transition: transform .3s;
+        }
+    }
+
+    &:hover {
+        .zoom {
+        transform: scale(1.2);
+        }
+    }
+}
+.content-container {
+    //  li內多餘的flex空間分配給content-container區塊，讓內部的文字敘述對齊，不受行數影響
+    flex-grow:1; 
+    display: flex;
+    flex-direction: column;
+    h3 {
+      font-size: 20px;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+    a {
+        color: initial;
+    }
+    .caption {
+      font-size: 14px;
+      color: $black-80;
+    }
+    .ai-desc {
+      padding: 20px 32px;
+      flex-grow:1;
+    }
+    .ai-info {
+      border-top: 1px solid $black-40;
+      border-bottom: 1px solid $black-40;
+    }
+    .ai-info,
+    .ai-hashtag {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 32px;
+      align-items: center;
+    }
+}
+
+/* Search */
+// Remove outer border and shadow of input on focus state
+.search > *:focus {
+    outline: none;
+    box-shadow: none;
+}
+.dropdown > *:focus {
+    outline: none;
+    box-shadow: none;
+}
+.search {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    .form-control {
+        border: 0;
+        background-color: $black-20;
+        color: $dark;
+    }
+    input {
+        padding: 20px 40px 20px 76px;
+    }
+    .material-icons {
+        position: absolute;
+        left: 42px;
+        top: calc(50% - 0.5em);
+    }
+}
+
+// Filter Custimize dropdown css style
+.btn-search-bar {
+    display: flex;
+    align-items: center;
+    background-color: $white;
+    color: $dark;
+    border: 1px solid $black-20;
+    border-radius: 16px;
+    padding: 20px 32px;
+    &:hover, &:focus {
+        background-color: $white;
+        color: $dark;
+        border-color: $dark;
+    }
+}
+a.dropdown-item {
+    color: $dark;
+    padding: 8px 16px;
+}
+a.dropdown-item:active {
+    background-color: $white;
+    color: $dark;
+}
+
+// filter list scroll bar and hide x-scroll bar
+.filter-list {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap; // Remain horizontal content
+    overflow-x: auto;
+
+    a {
+        color: $black-60;
+        &:hover {
+            background-color: $black-20;
+            border-radius: 16px;
+        }
+    }
+}
+.filter-list::-webkit-scrollbar {
+    display: none;
+}
+.filter-list {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+// filter-type
+a.filter-type-active {
+    background-color: $black-20;
+    border-radius: 16px;
+    color: black;
+    font-weight: 900;
+} 
+// filter-item active state
+a.filter-active::before, a.filter-orderBy-active::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/icons/check.png);
+    position: absolute;
+    left: 120px;
+}
+
+// pagination
+.page-link {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+/* Footer */
+
+/* Custimized Utility */ 
+.display-1 {
+    display: block;
+}
+
+.border-radius-160 {
+    border-radius: 160px;
+}
+
+.whitespace-pre-line{
+    white-space: pre-line; // 保留換行，所以不用br即可換行
+}
+
+
+/* RWD */
+@media(max-width: 992px){
+    .bg-white {
+        border-radius: 20px;
+    }          
+}
+@media(max-width: 768px){
+    .header ul{
+        flex-direction: column;
+        justify-content: center;
+
+        height: 584px;
+        width: auto;
+
+        top: 80px;
+        border-top: 1px solid $gray-300;
+        a {
+            font-size: 80px;
+        }
+    }
+    .social {
+        margin-top: 36px;
+    }
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media(max-width: 376px){
+    .social {
+        margin-bottom: 36px;
+    }  
+}
