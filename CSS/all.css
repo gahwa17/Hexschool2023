@@ -11197,7 +11197,6 @@ a:link, a:visited {
 *::before,
 ::after {
   box-sizing: border-box;
-  outline: 1px solid #343a40;
 }
 
 body {
@@ -11362,6 +11361,7 @@ img {
 /* Tool */
 .tool-item {
   width: 416px;
+  padding: 0px;
 }
 .tool-item .img-container {
   overflow: hidden;

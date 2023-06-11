@@ -64,3 +64,8 @@ $(".dropdown-item[data-sort='old-to-new']").click(function (e) {
   $(".dropdown-btnText").text("由舊到新");
 });
 
+// Back to top
+$('#scrollToTop').click(function(){
+  $("html, body").animate(
+    {scrollTop: 0},"slow");
+});

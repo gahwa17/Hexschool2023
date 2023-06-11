@@ -145,7 +145,8 @@
 // Tool-list
 .tool-item {
     width: 416px;
-
+    padding: 0px; // Remove _grid.scss padding
+    
     .img-container {
         overflow: hidden;
         .zoom {
