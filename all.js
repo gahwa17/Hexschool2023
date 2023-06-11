@@ -36,14 +36,13 @@ Swiper初始化必須放在最前面，否則當頁面中有swiper類元素尚�
 */
 
 
-var navbarToggler = document.querySelector(".navbar-toggler");
-var navbarTogglerIcon = navbarToggler.querySelector(".navbar-toggler-icon");
-
-navbarToggler.addEventListener("click", function() {
-navbarTogglerIcon.classList.toggle("active");
-var currentIcon = navbarTogglerIcon.innerHTML;
-navbarTogglerIcon.innerHTML = (currentIcon === "menu") ? "close" : "menu";
+// Header menu open/close icon switch
+$(".navbar-toggler").click(function() {
+  $(".navbar-toggler-icon").toggleClass("active");
+  var currentIcon = $(".navbar-toggler-icon").html();
+  $(".navbar-toggler-icon").html(currentIcon === "menu" ? "close" : "menu");
 });
+
 
 // Pricing page
 $(".accordion-item").click(function (e) {
