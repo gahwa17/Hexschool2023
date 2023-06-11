@@ -11193,6 +11193,10 @@ a:link, a:visited {
   color: #fff;
 }
 
+li::marker {
+  content: " ";
+}
+
 *,
 *::before,
 ::after {
